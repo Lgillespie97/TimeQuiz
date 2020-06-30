@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <link href="./assets/css/style.css" rel="stylesheet" />
+    <script src="./assets/js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <span id="high_scores">
+            <a href="javascript:viewHighScores()">view high scores</a>&nbsp;|&nbsp;<a href="javascript:clearHighScores()">clear high scores</a>&nbsp;|&nbsp;
+        </span>
+        <span id="timer">timer: TODO</span>
+    </header>
+
+    <h1>Coding Quiz Challenge</h1>
+    
+    <div id="intro">
+        <p>Try to answer the following code-related questions within the time limit.</p>
+        <p>Keep in mind that incorrect answers will penalize our score/time by ten seconds!</p>
+        <input type="button" value="Start Quiz" onclick="javascript:startQuiz()" />
+    </div>
+    
+    <div id="quiz" hidden=true>
+        <div class="question" id="question">Question</div>
+        <div id="answers">
+            <div class="answer" id="answer1" onclick="javascript:submitAnswer('answer1')"></div>
+            <div class="answer" id="answer2" onclick="javascript:submitAnswer('answer2')"></div>
+            <div class="answer" id="answer3" onclick="javascript:submitAnswer('answer3')"></div>
+            <div class="answer" id="answer4" onclick="javascript:submitAnswer('answer4')"></div>
+            <div class="answer" id="answer5" onclick="javascript:submitAnswer('answer5')"></div>
+            <div class="answer" id="answer6" onclick="javascript:submitAnswer('answer6')"></div>
+            <div class="answer" id="answer7" onclick="javascript:submitAnswer('answer7')"></div>
+        </div>
+    </div>
+    
+    <div id="summary" hidden=true>
+        <h3>Summary</h3>
+        total number of questions: <span id="totalNumberOfQuestions">&nbsp;</span><br/>
+        correct answers:<span id="correctAnswers">&nbsp;</span><br/>
+        incorrect answers:<span id="incorrectAnswers">&nbsp;</span><br/>
+        please enter your initials: <input type="text" name="initials" id="initials" size="3"/> &nbsp;<input type="button" value="save score" onclick="javascript:saveScore()"/>
+    </div>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>

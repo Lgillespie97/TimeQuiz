@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  vertical-align: middle;
+  
+}
+
+.body {
+    background-color: #FF6666;
+}
+
+.question
+{
+    font-size: medium;
+    font-weight: bold;
+    padding: 10px;
+
+}
+
+.answer {
+    font-size: medium;
+    padding: 10px;
+}
+
+.answer:hover {
+    background-color: yellow;
+}
+
+
